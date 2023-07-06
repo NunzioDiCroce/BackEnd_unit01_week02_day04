@@ -172,14 +172,24 @@ public class Main {
 		System.out.println("");
 		System.out.println("Lista dei prodotti appartenenti alla categoria Boys con prezzo scontato del 10%:");
 
-		// List<Product> productsListEsercizio3Sconto = new ArrayList<>();
-		// productsListEsercizio3Sconto = productsList.stream().filter(_product ->
-		// _product.getCategory().equals("Boys"))
-		// .map(_product -> _product.getPrice() * 0.9).toList();
+		/*
+		 * List<Product> productsListEsercizio3Sconto = new ArrayList<>();
+		 * productsListEsercizio3Sconto = productsList.stream().filter(_product ->
+		 * _product.getCategory().equals("Boys")) .map(_product -> _product.getPrice() *
+		 * 0.9).toList();
+		 * 
+		 * for (Product _product : productsListEsercizio3Sconto) {
+		 * System.out.println(_product); }
+		 */
 
-		// for (Product _product : productsListEsercizio3Sconto) {
-		// System.out.println(_product);
-		// }
+		/*
+		 * List<Product> productsListEsercizio3Sconto = new ArrayList<>();
+		 * productsListEsercizio3Sconto = productsListEsercizio3.stream().map(_product
+		 * -> { return _product.setPrice(_product.getPrice() * 0.90); }).toList();
+		 * 
+		 * for (Product _product : productsListEsercizio3Sconto) {
+		 * System.out.println(_product); }
+		 */
 	}
 
 }

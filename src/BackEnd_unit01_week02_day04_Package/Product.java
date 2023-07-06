@@ -30,4 +30,8 @@ public class Product {
 		return price;
 	}
 
+	public double setPrice(double newPrice) {
+		return this.price = newPrice;
+	}
+
 }
