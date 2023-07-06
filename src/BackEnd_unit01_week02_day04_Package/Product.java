@@ -16,4 +16,18 @@ public class Product {
 		this.price = _price;
 	}
 
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", category=" + category + ", price=" + price + "]";
+	}
+
+	// - - - - - - - - - - - - - - - methods
+	public String getCategory() {
+		return category;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
 }
