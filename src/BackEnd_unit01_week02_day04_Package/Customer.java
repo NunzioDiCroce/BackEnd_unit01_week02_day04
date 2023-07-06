@@ -13,4 +13,9 @@ public class Customer {
 		this.name = _name;
 		this.tier = _tier;
 	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", tier=" + tier + "]";
+	}
 }
