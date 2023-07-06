@@ -152,6 +152,34 @@ public class Main {
 		for (Order _order : ordersListEsercizio2) {
 			System.out.println(_order);
 		}
+
+		// - - - - - - - - - - - - - - - ESERCIZIO 3
+		System.out.println("");
+		System.out.println("");
+		System.out.println("- - - - - - - - - - ESERCIZIO 3 - - - - - - - - - -");
+		System.out.println("");
+		System.out.println("Lista dei prodotti appartenenti alla categoria Boys:");
+
+		// - - - - - - - - - - - - - - - stream
+		List<Product> productsListEsercizio3 = new ArrayList<>();
+		productsListEsercizio3 = productsList.stream().filter(_product -> _product.getCategory().equals("Boys"))
+				.toList();
+
+		for (Product _product : productsListEsercizio3) {
+			System.out.println(_product);
+		}
+
+		System.out.println("");
+		System.out.println("Lista dei prodotti appartenenti alla categoria Boys con prezzo scontato del 10%:");
+
+		// List<Product> productsListEsercizio3Sconto = new ArrayList<>();
+		// productsListEsercizio3Sconto = productsList.stream().filter(_product ->
+		// _product.getCategory().equals("Boys"))
+		// .map(_product -> _product.getPrice() * 0.9).toList();
+
+		// for (Product _product : productsListEsercizio3Sconto) {
+		// System.out.println(_product);
+		// }
 	}
 
 }
